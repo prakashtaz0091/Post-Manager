@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forum Post Manager</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Forum Post Manager</h1>
+
+            <section id="fetch-section">
+                <button id="fetch-posts">Fetch Posts</button>
+            </section>
+            <hr>
+            <section id="create-section">
+                <h2>Create Post</h2>
+                <input type="text" id="create-copy" placeholder="Copy" />
+                <button id="create-post">Create Post</button>
+                <p id="create-status"></p>
+            </section>
+            <hr>
+            <section id="update-section">
+                <h2>Update Post</h2>
+                <input type="text" id="update-id" placeholder="Post ID" />
+                <input type="text" id="update-copy" placeholder="New Copy" />
+                <button id="update-post">Update Post</button>
+                <p id="update-status"></p>
+            </section>
+            <hr>
+
+            <section id="delete-section">
+                <h2>Delete Post</h2>
+                <input type="text" id="delete-id" placeholder="Post ID" />
+                <button id="delete-post">Delete Post</button>
+                <p id="delete-status"></p>
+            </section>
+        </div>
+        <div class="right">
+            <h1>Posts</h1>
+            <div id="post-list"></div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
